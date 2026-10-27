@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Resumen Formularios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1,
+        h2 {
+            color: #cc6600;
+        }
+
+        hr {
+            margin: 30px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Resumen Formularios - Josese</h1>
+
+    <!-- EJERCICIO 1 -->
+    <h2>Ejercicio 1</h2>
+    <form action="#" method="post">
+        <label>Nombre:</label>
+        <input type="text" name="nombre">
+        <br><br>
+
+        <label>Apellidos:</label>
+        <input type="text" name="apellidos">
+        <br><br>
+
+        <label>Correo electrónico:</label>
+        <input type="email" name="email">
+        <br><br>
+
+        <label>Población:</label>
+        <input type="text" name="poblacion">
+        <br><br>
+
+        <label>Provincia:</label>
+        <input type="text" name="provincia">
+        <br><br>
+
+        <label>Edad:</label><br>
+        <input type="radio" name="edad" value="0-20"> 0-20<br>
+        <input type="radio" name="edad" value="20-40" checked> 20-40<br>
+        <input type="radio" name="edad" value="40-60"> 40-60<br>
+        <input type="radio" name="edad" value="60-100"> 60-100
+        <br><br>
+
+        <label>¿Cómo nos conociste?</label><br>
+        <input type="checkbox" name="conociste" value="amigo"> A través de un amigo.<br>
+        <input type="checkbox" name="conociste" value="buscador"> A través de un buscador.<br>
+        <input type="checkbox" name="conociste" value="navegando"> Navegando por la red.<br>
+        <input type="checkbox" name="conociste" value="otros"> Otros
+        <br><br>
+
+        <label>Opinión sobre nuestra página web</label><br>
+        <textarea name="opinion" rows="4" cols="40" placeholder="Escriba aquí su opinión..."></textarea>
+        <br><br>
+
+        <label>Tiene alguna sugerencia.</label><br>
+        <textarea name="sugerencia" rows="4" cols="40" placeholder="Escriba aquí sus sugerencias..."></textarea>
+        <br><br>
+
+        <label>Cuánto navegas por internet? (Señala la opción que más se acerque)</label><br>
+        <select name="navegas" size="2">
+            <option value="2horas">2 horas al día</option>
+            <option value="4horas">4 horas al día</option>
+        </select>
+        <br><br>
+
+        <input type="submit" value="Enviar formulario">
+        <input type="reset" value="Borrar formulario">
+    </form>
+
+    <hr>
+
+    <!-- EJERCICIO 2 -->
+    <h2>Ejercicio 2</h2>
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <td>Nombre</td>
+                <td><input type="text" name="nombre"></td>
+            </tr>
+            <tr>
+                <td>apellidos</td>
+                <td><input type="text" name="apellidos"></td>
+            </tr>
+            <tr>
+                <td>fecha de nacimiento</td>
+                <td><input type="date" name="fnacimiento"></td>
+            </tr>
+            <tr>
+                <td>calle y número</td>
+                <td><input type="text" name="calle" size="40"></td>
+            </tr>
+            <tr>
+                <td>código postal</td>
+                <td><input type="text" name="codigopostal" size="8"></td>
+            </tr>
+            <tr>
+                <td>provincia</td>
+                <td>
+                    <input type="text" name="provincia">
+                    Teléfono <input type="text" name="telefono">
+                </td>
+            </tr>
+            <tr>
+                <td>Sexo</td>
+                <td>
+                    <input type="radio" name="sexo" value="hombre"> Hombre
+                    <input type="radio" name="sexo" value="mujer"> Mujer
+                    Estado Civil
+                    <select name="estadocivil">
+                        <option value="soltero">Soltero</option>
+                        <option value="casado">Casado</option>
+                        <option value="divorciado">Divorciado</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Idiomas</td>
+                <td>
+                    <input type="checkbox" name="idiomas" value="espanol"> Español
+                    <input type="checkbox" name="idiomas" value="frances"> Francés
+                    <input type="checkbox" name="idiomas" value="ingles"> Inglés
+                </td>
+            </tr>
+            <tr>
+                <td>Comentarios Personales</td>
+                <td><textarea name="comentarios" rows="3" cols="40"></textarea></td>
+            </tr>
+            <tr>
+                <td>Pulse aqui</td>
+                <td>
+                    <input type="submit" value="enviar los datos">
+                    <input type="reset" value="borrar los datos">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <hr>
+
+    <!-- EJERCICIO 3 -->
+    <h2>Ejercicio 3: Rellena tu CV</h2>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Datos personales</legend>
+            Provincia<br>
+            <select name="provincia">
+                <option value="">- selecciona -</option>
+                <option value="almeria">Almería</option>
+                <option value="cadiz">Cádiz</option>
+                <option value="granada">Granada</option>
+                <option value="malaga">Málaga</option>
+                <option value="sevilla">Sevilla</option>
+            </select>
+            <br><br>
+
+            Fecha de nacimiento<br>
+            <input type="text" name="dia" size="4">
+            de
+            <select name="mes">
+                <option value="enero">Enero</option>
+                <option value="febrero">Febrero</option>
+                <option value="marzo">Marzo</option>
+                <option value="abril">Abril</option>
+                <option value="mayo">Mayo</option>
+                <option value="junio">Junio</option>
+                <option value="julio">Julio</option>
+                <option value="agosto">Agosto</option>
+                <option value="septiembre">Septiembre</option>
+                <option value="octubre">Octubre</option>
+                <option value="noviembre">Noviembre</option>
+                <option value="diciembre">Diciembre</option>
+            </select>
+            de
+            <input type="text" name="anio" size="6">
+        </fieldset>
+        <br>
+
+        Temas de interés<br>
+        <select name="temas" size="5" multiple>
+            <option value="bd">Administración de bases de datos</option>
+            <option value="programacion">Análisis y programación</option>
+            <option value="arquitectura">Arquitectura</option>
+            <option value="calidad">Calidad</option>
+            <option value="erp">ERP, CRM, Business Intelligence</option>
+        </select>
+    </form>
+
+    <hr>
+
+    <!-- EJERCICIO 4 -->
+    <h2>Ejercicio 4: Información sobre el producto</h2>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Datos básicos</legend>
+            Nombre<br>
+            <input type="text" name="nombre" size="35">
+            <br><br>
+
+            Descripción<br>
+            <textarea name="descripcion" rows="4" cols="40"></textarea>
+            <br><br>
+
+            Foto <input type="text" name="foto_ruta" size="15">
+            <input type="file" name="foto">
+            <br><br>
+
+            <input type="checkbox" name="contador" value="si"> Añadir contador de visitas
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Datos económicos</legend>
+            Precio <input type="number" name="precio" size="8"> €
+            Impuestos
+            <select name="impuestos">
+                <option value="4">4%</option>
+                <option value="7">7%</option>
+                <option value="16">16%</option>
+                <option value="25">25%</option>
+            </select>
+            <br><br>
+
+            Promoción<br>
+            <input type="radio" name="promocion" value="ninguno" checked> Ninguno<br>
+            <input type="radio" name="promocion" value="transporte"> Transporte gratuito<br>
+            <input type="radio" name="promocion" value="descuento"> Descuento 5%
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

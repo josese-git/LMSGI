@@ -1,0 +1,46 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.proyecto {
+    background-color: coral;
+}
+
+.redes {
+    background-color: blue;
+}
+
+.FOL {
+    background-color: blueviolet;
+}
+
+.seguridad {
+    background-color: red;
+}
+
+.ingles {
+    background-color: green;
+}
+
+.sor {
+    background-color: khaki;
+}
+
+.web {
+    background-color: aquamarine;
+}
+
+.optativa {
+    background-color: gold;
+}
+
+.caption {
+    font-size: 200%;
+}
